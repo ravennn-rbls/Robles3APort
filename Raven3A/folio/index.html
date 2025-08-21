@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="data:image/png;base64,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"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Raven Robles</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+  <div class="home-hero__content">
+    <div class="home-hero__info">
+
+      <!-- Profile Image -->
+      <div class="home-hero__img-cont">
+        <img src="./assets/profile.jpg" alt="Raven Robles" class="home-hero__img">
+      </div>
+
+      <!-- Heading -->
+      <h1 class="heading-primary home-hero__heading-primary">
+        <span class="heading-primary__sm"> Hello 👋</span>
+        <span class="heading-primary__main">
+          I'm Raven Robles! An aspiring Computer Science student with a passion for learning and creating
+        </span>
+      </h1>
+
+      <!-- Button -->
+      <div class="home-hero__btns">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=roblesraven38@gmail.com" 
+           class="btn btn-inv home-hero__btn-theme">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="about" class="about main-section"
+   style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm">About Me</span>
+        <span class="heading-secondary__main">
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                As a computer science student, I’m passionate about technology and its power to solve real-world problems.
+              </span>
+              <span>
+               I’ve worked on projects like student portals, e-commerce websites, and system applications, 
+               gaining hands-on experience in web development and database management. 
+               I continue to sharpen my knowledge in programming languages, frameworks, and problem-solving techniques.
+              </span>
+              <span>
+               I value teamwork, curiosity, and persistence, and I’m always ready to
+               take on challenges and improve one step at a time. 
+              </span>
+            </p>
+            <button class="btn btn-theme about__btn-theme"><a href="resume.pdf">View Resume</a></button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">💻 Programming: Java, JavaScript, PHP</li>
+              <li class="about__skill">🌐 Web Development: HTML, CSS</li>
+              <li class="about__skill">🗄 Databases: SQL (MySQL)</li>
+              <li class="about__skill">⚡ Other Skills: Problem-Solving, Project Development, Teamwork</li>
+            </ul>
+          </div>
+  </section>
+  <section id="projects" class="projects main-section"  
+  style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the personal and clients projects that I created with the project details
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/proj1.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                CHCCI WEBSITE
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                 The CHCCI website serves as the official online gateway to Concepcion Holy Cross College Inc.,
+                  offering essential information about its academic programs, institutional values, and student services.
+                </span>
+              </p>
+              <button class="btn btn-inv projects__btn-inv"><a href="https://drive.google.com/drive/folders/1O1LL3RazhmaKj4Y71Lcs2BXr-GciXXCq?usp=drive_link">Code Link</button></a>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/auth.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                User Management System
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                 A web-based system that allows users to register, log in, and log out securely. 
+                 It also provides administrative functions such as adding new users and removing 
+                 existing ones. This project demonstrates essential authentication and user 
+                 management features commonly used in modern applications.
+                </span>
+              </p>
+              <button class="btn btn-inv projects__btn-inv"><a href="https://drive.google.com/drive/folders/1MJqxmbecy0BgMrZJiGAep1MCak8FxaYD?usp=drive_link">Code Link</button></a>
+            </div>
+  </section>
+<section id="contact" class="contact main-section" 
+  style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
+  <div class="main-container">
+    <h2 class="heading-secondary">
+      <span class="heading-secondary__sm"> Contact 📧</span>
+      <br>
+      <span class="heading-secondary__main">
+        Interested in learning more or collaborating? Feel free to reach out — I'd love to connect!
+      </span>
+    </h2>
+    <div class="main-section__content" style="margin-top: 2rem;">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=roblesraven38@gmail.com" class="contact__form-submit">
+        Send Email
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/ravennn-rbls" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.instagram.com/rbls_raven?igsh=d28wYTNyZGtrem9x" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.facebook.com/rbls.ravennn" class="main-footer__social-link">
+            <img src="./assets/icons8-fb.png" alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+         
+          <script>document.write(new Date().getFullYear())</script>. Made with ♥ by
+          <a target="_blank" href="https://github.com/ravennn-rbls"> Raven Robles</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
